@@ -1,17 +1,115 @@
+:root {
+    --primary-color: #15c6e6;
+    --secondary-color: #b4c6cf;
+    --tertiary-color: #f0f5f5;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
+.header {
+    padding: 20px 25px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
+    z-index: 9999;
+}
+
+header a{
+    text-decoration: none;
+    background-color: var(--primary-color);
+}
+
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    align-items: center;
+    list-style: none;
+    background-color: var(--secondary-color);
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    background-color: var(--primary-color);
+}
+
+header nav ul li a:hover {
+    background: var(--primary-color);
+    border-radius: 15px;
+}
+
+header h1{
+    font-weight: bold;
+    font-size: 36px;  
+    color: var(--primary-color);
+    margin: 0;
+}
+
+.section-title {
+    font-size: 36px;
+    color: var(--primary-color);
+}
+
 .display-picture {
-    width: 100px;
-    height: 100px;
-    padding: 20px;
-    display: inline-block;
+    width: 125px;
+    height: 125px;
+    padding: 10px;
 }
 
 .bio p {
+    display: inline-block;
     font-size: 28px;
     font-style: italic;
-    display: inline-flex;
     justify-content: right;
+    width: 80%;
+}
+
+.contact ul {
+    list-style: none;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.roles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.role {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border: 2px solid var(--primary-color);
+    background-color: var(--tertiary-color);
+}
+
+.role ul li {
+    width: 80%;
+    line-height: 1.5;
+    flex-wrap: wrap;
+}
+
+.company {
+    width: 25%;
+}
+
+.position {
+    width: 50%;
 }
