@@ -131,12 +131,14 @@ header h1{
     font-size: 18px;
 }
 
-.work {
+.work-hero{
+    position: relative;
     margin: auto;
-    width: 50%;
+    width: 100%;
     border: none;
     padding: 10px;
 }
+
 .work-img-hero {
     height: 450px;
     width: 900px;
@@ -151,17 +153,37 @@ header h1{
     justify-content: space-around;
     border: 5px solid var(--secondary-color);
     border-radius: 10px;    
-
 }
 
-.work xframe {
-    height: 210px;
-    width: 420px;
+.work {
+    display: inline-block;
+    position: relative;
+    margin: auto;
+    width: 100%;
+    border: none;
+    padding: 10px;
 }
+
+.work-hero h5 {
+    color: white;
+    border: 10px solid var(--secondary-color);
+    background-color: var(--secondary-color);
+    opacity: 0.9;
+    font-size: 48px;
+    margin: 15px;
+    position: absolute;
+    bottom: 25px;
+    left: 15px;
+}
+
 .work h5 {
-    color: black;
+    color: white;
+    border: 2px solid var(--secondary-color);
+    background-color: var(--secondary-color);
+    opacity: 0.9;
     font-size: 24px;
-    margin: 0;
-    align-content: center;
-
+    margin: 15px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
 }
