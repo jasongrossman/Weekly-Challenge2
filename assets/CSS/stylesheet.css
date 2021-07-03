@@ -37,7 +37,6 @@ header nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: right;
-    align-items: center;
     list-style: none;
     background-color: var(--secondary-color);
 }
@@ -66,18 +65,30 @@ header h1{
     color: var(--primary-color);
 }
 
+.bio {
+    background-color: var(--tertiary-color);
+    width: 100%;
+    margin: auto;
+    flex-wrap: wrap;
+    border: 2px solid var(--primary-color);
+
+}
+
 .display-picture {
-    width: 125px;
-    height: 125px;
-    padding: 10px;
+    width: 20%;
+    height: 20%;
+    padding: 10px 10px 10px 25px;
 }
 
 .bio p {
-    display: inline-block;
-    font-size: 28px;
+    width: 70%;
+    font-size: 26px;
     font-style: italic;
-    justify-content: right;
-    width: 80%;
+    float: right;
+    flex-wrap: wrap;
+    margin: 0 20px 0 20px;
+    padding: 10px 10px 10px 25px;
+    line-height: 1.5;
 }
 
 .contact ul {
@@ -90,6 +101,7 @@ header h1{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    display: inline-block;
 }
 
 .role {
@@ -112,4 +124,25 @@ header h1{
 
 .position {
     width: 50%;
+}
+
+.work {
+    margin: auto;
+    width: 50%;
+    border: none;
+    padding: 10px;
+}
+.work-img-hero {
+    height: 450px;
+    width: 900px;
+    align-content: center;
+    border: 5px solid var(--secondary-color);
+    border-radius: 10px;    
+}
+
+.work h5 {
+    color: black;
+    font-size: 24px;
+    margin: 0;
+
 }
