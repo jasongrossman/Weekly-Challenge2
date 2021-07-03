@@ -112,18 +112,24 @@ header h1{
     background-color: var(--tertiary-color);
 }
 
+.role ul {
+    width: 100%;
+}
+
 .role ul li {
-    width: 80%;
+    width: 100%;
     line-height: 1.5;
     flex-wrap: wrap;
 }
 
 .company {
-    width: 25%;
+    width: 50%;
+    font-size: 22px;
 }
 
 .position {
     width: 50%;
+    font-size: 18px;
 }
 
 .work {
