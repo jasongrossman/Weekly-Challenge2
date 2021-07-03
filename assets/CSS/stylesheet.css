@@ -113,10 +113,15 @@ header h1{
     font-size: 18px;
 }
 
+.tile-wrapper {
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
 .work-hero{
     position: relative;
-    margin: auto;
-    width: 100%;
     border: none;
     padding: 10px;
 }
@@ -124,15 +129,6 @@ header h1{
 .work-img-hero {
     height: 450px;
     width: 900px;
-    justify-content: space-around;
-    border: 5px solid var(--secondary-color);
-    border-radius: 10px;    
-}
-
-.work-img {
-    height: 225px;
-    width: 450px;
-    justify-content: space-around;
     border: 5px solid var(--secondary-color);
     border-radius: 10px;    
 }
@@ -140,10 +136,15 @@ header h1{
 .work {
     display: inline-block;
     position: relative;
-    margin: auto;
-    width: 100%;
-    border: none;
     padding: 10px;
+}
+
+.work-img {
+    height: 270px;
+    width: 435px;
+    margin: auto;
+    border: 5px solid var(--secondary-color);
+    border-radius: 10px;
 }
 
 .work-hero h5 {
@@ -154,12 +155,13 @@ header h1{
     font-size: 48px;
     margin: 15px;
     position: absolute;
-    bottom: 25px;
-    left: 15px;
+    bottom: 5%;
+    left: 15%;
 }
 
-.work h5 {
+.work-description {
     color: white;
+    width: 70%;
     border: 2px solid var(--secondary-color);
     background-color: var(--secondary-color);
     opacity: 0.9;
@@ -168,6 +170,7 @@ header h1{
     position: absolute;
     bottom: 10px;
     left: 10px;
+    z-index: 9999;
 }
 
 .contact {
