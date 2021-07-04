@@ -11,7 +11,6 @@ body {
 header {
     background-color: var(--tertiary-color);
     border: 2px solid var(--primary-color);
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
     position: -webkit-sticky;
@@ -56,7 +55,6 @@ header h1{
 
 .bio {
     background-color: var(--tertiary-color);
-    width: 100%;
     margin: auto;
     border: 2px solid var(--primary-color);
 }
@@ -69,7 +67,7 @@ header h1{
 
 .bio p {    
     width: 70%;
-    font-size: 24px;
+    font-size: 22px;
     font-style: italic;
     float: right;
     flex-wrap: wrap;
@@ -204,11 +202,14 @@ header h1{
 
 @media screen and (max-width: 980px) {
     section {
-        padding: 30px 15px;
+        padding: 30px;
     }
 
     header {
         height: 90px;
+        width: 90%;
+        margin: 0 25px 0 25px;
+        justify-content: center;
     }
  
      header h1{
@@ -240,35 +241,114 @@ header h1{
 
     .display-picture {
         flex: 0 32%;
-        margin-right: 0;
-        margin-top: 15px;
-        margin-bottom: 15px;
+        margin: 85px 0 15px 15px;
+        padding: 5px;
     }   
+
+    .bio {
+        width: 100%;
+        padding: 15px 0 100px 0;
+    }
     
     .bio p {    
         font-size: 22px;
-        padding: 5px 5px 50px 5px;
+        padding: 20px 0px 100px 0;
         display: block;
         flex: 0 70%;
         justify-content: center;
-        padding: 0 0 100px 0;
     }
 
     .work {
         padding: 6px;
     }
 
+    .work-img {
+        height: 400px;
+        width: 100%;
+    }
+
+    .work-img-hero {
+        height: 400px;
+        width: 100%;
+    }
+
     .work-hero h5 {
         left: 3%;
     }
+
+    .role {
+        display: block;
+    }
+
+    .company {
+        text-align: center;
+        width: 100%;
+        margin: auto;
+    }
+
+    .position {
+        width: 100%;
+        text-align: center;
+    }
+
+    .role ul {
+        width: 90%;
+    }
+
+    .work-description {
+        color: white;
+        border: 10px solid var(--secondary-color);
+        background-color: var(--secondary-color);
+        opacity: 0.9;
+        font-size: 36px;
+        margin: 15px;
+        position: absolute;
+        text-align: left;
+        width: 60%;
+    }
+
 }
 
 @media  screen and (max-width: 768px) {
- 
+    .roles {
+        flex: 1 100%;
+    }
+    
+    .role {
+        display: flex;
+        justify-content: space-between;
+        border: 2px solid var(--primary-color);
+        background-color: var(--tertiary-color);
+    }
+
+    .position {
+        width: 100%;
+    }
+    
+    .role ul {
+        width: 80%;
+    }
+    
+    .role ul li {
+        width: 100%;
+        line-height: 1.5;
+        flex-wrap: wrap;
+        break-inside: auto;
+    }
+    
+    .company {
+        width: 50%;
+        font-size: 22px;
+    }
+    
+    .position {
+        width: 50%;
+        font-size: 18px;
+    }
+      
 }
 
 @media  screen and (max-width: 575px) {    
-
     .nav li a {
         flex-wrap: wrap;
         color: black;
