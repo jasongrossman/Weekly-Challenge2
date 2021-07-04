@@ -310,42 +310,63 @@ header h1{
 }
 
 @media  screen and (max-width: 768px) {
+    header {
+        height: 100px;
+    }
+
+    header nav ul {
+        margin-top: 5px;
+        justify-content: center;
+    }
+
+    .section-title {
+        padding: 10px;
+        margin: 10px;
+    }
+    
+    nav {
+        display: inline;
+    }
+
+    .display-picture {
+        flex: 0 45%;
+        margin: 85px 0 15px 15px;
+        padding: 5px;
+    }   
+
+    .bio {
+        width: 100%;
+        padding: 15px 0 100px 0;
+    }
+    
+    .bio p {    
+        font-size: 18px;
+        width: 67%;
+        padding: 0;
+        display: block;
+        flex: 0 70%;
+        justify-content: center;
+    }
+
     .roles {
         flex: 1 100%;
     }
     
-    .role {
-        display: flex;
-        justify-content: space-between;
-        border: 2px solid var(--primary-color);
-        background-color: var(--tertiary-color);
+    .work-img-hero {
+        height: 300px;
     }
 
-    .position {
-        width: 100%;
+    .work-img {
+        height: 300px;
     }
-    
-    .role ul {
-        width: 80%;
+
+    .work-hero h5 {
+        font-size: 36px;
     }
-    
-    .role ul li {
-        width: 100%;
-        line-height: 1.5;
-        flex-wrap: wrap;
-        break-inside: auto;
-    }
-    
-    .company {
-        width: 50%;
-        font-size: 22px;
-    }
-    
-    .position {
-        width: 50%;
-        font-size: 18px;
-    }
-      
+
+
+    .work-description {
+        width: 82%;
 }
 
 @media  screen and (max-width: 575px) {    
