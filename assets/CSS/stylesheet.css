@@ -378,14 +378,6 @@ header h1{
         font-size: 18px;
     }
 
-    .display-picture {
-        width: 30%;
-        height: 30%;
-        align-items: center;
-        justify-self: center;
-        padding: 10px 10px 10px 10px;
-    }   
-    
     .bio {
         background-color: var(--tertiary-color);
         width: 100%;
@@ -395,11 +387,9 @@ header h1{
     }
     
     .bio p {
-        background-color: var(--tertiary-color);
-        width: 100%;
+        width: 73%;
         flex: 1 100%;
         margin: auto;
-        border: 2px solid var(--primary-color);
-
     }   
+}
 }
